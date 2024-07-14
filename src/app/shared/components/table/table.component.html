@@ -1,1 +1,140 @@
-<p>table works!</p>
+<p-table #dt [value]="users" [(selection)]="selectedCustomers" dataKey="id" [rowHover]="true" [rows]="10"
+  [showCurrentPageReport]="true" [rowsPerPageOptions]="[10, 25, 50]" [loading]="loading$" [paginator]="false"
+  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [filterDelay]="0"
+  [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']">
+  <ng-template pTemplate="caption">
+    <div class="w-100 d-flex custom-table-header justify-content-between align-items-center">
+      <div class="table-title">
+        <p class="mb-0">
+          Users
+        </p>
+      </div>
+    <div class="flex justify-content-between">
+      <p-iconField iconPosition="left">
+        <p-inputIcon>
+          <i class="pi pi-search"></i>
+        </p-inputIcon>
+        <input pInputText type="text" (input)="dt.filterGlobal($event.target, 'contains')" placeholder="Search" />
+      </p-iconField>
+    </div>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 4rem">
+        <p-tableHeaderCheckbox />
+      </th>
+      <th pSortableColumn="name" style="min-width: 14rem">
+        <div class="flex justify-content-between align-items-center">
+          ID
+        </div>
+      </th>
+      <th pSortableColumn="country.name" style="min-width: 14rem">
+        <div class="flex justify-content-between align-items-center">
+          Nationality
+        </div>
+      </th>
+      <th pSortableColumn="representative.name" style="min-width: 14rem">
+        <div class="flex justify-content-between align-items-center">
+          Reference ID
+        </div>
+      </th>
+      <th pSortableColumn="date" style="min-width: 10rem">
+        <div class="flex justify-content-between align-items-center">
+          Date
+        </div>
+      </th>
+      <th pSortableColumn="balance" style="min-width: 10rem">
+        <div class="flex justify-content-between align-items-center">
+          SDK Version
+        </div>
+      </th>
+      <th pSortableColumn="status" style="min-width: 10rem">
+        <div class="flex justify-content-between align-items-center">
+          Device Model
+        </div>
+      </th>
+      <th pSortableColumn="activity" style="min-width: 10rem">
+        <div class="flex justify-content-between align-items-center">
+          Face Scan
+        </div>
+      </th>
+      <th pSortableColumn="activity" style="min-width: 10rem">
+        <div class="flex justify-content-between align-items-center">
+          Doc. Front
+        </div>
+      </th>
+      <th pSortableColumn="activity" style="min-width: 10rem">
+        <div class="flex justify-content-between align-items-center">
+          Doc. Date Full Name
+        </div>
+      </th>
+      <th pSortableColumn="activity" style="min-width: 10rem">
+        <div class="flex justify-content-between align-items-center">
+          DOB Expiration
+        </div>
+      </th>
+      <th pSortableColumn="activity" style="min-width: 10rem">
+        <div class="flex justify-content-between align-items-center">
+          Age Of ID
+        </div>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-customer>
+    <tr class="p-selectable-row">
+      <td>
+        <p-tableCheckbox [value]="customer" />
+      </td>
+      <td>
+        <span class="p-column-title">ID</span>
+        {{ customer.id }}
+      </td>
+      <td>
+        <span class="p-column-title">Nationality</span>
+        <span class="ml-1 vertical-align-middle">{{ customer.nationality }}</span>
+      </td>
+      <td>
+        <span class="p-column-title">Reference Id</span>
+        <span class="ml-1 vertical-align-middle">{{ customer.referenceId }}</span>
+      </td>
+      <td>
+        <span class="p-column-title">Date</span>
+        {{ customer.date | date : 'MM/dd/yyyy' }}
+      </td>
+      <td>
+        <span class="p-column-title">SDK Version</span>
+        {{ customer.sdkVersion }}
+      </td>
+      <td>
+        <span class="p-column-title">Device Model</span>
+        <img [src]="customer.deviceModel" alt="Device Model">
+      </td>
+      <td>
+        <span class="p-column-title">Face Scan</span>
+        <img [src]="customer.faceScan" alt="Face Scan">
+      </td>
+      <td>
+        <span class="p-column-title">Doc Fron</span>
+        <img [src]="customer.docFront" alt="Doc Fron">
+      </td>
+      <td>
+        <span class="p-column-title">Full Name</span>
+        {{ customer.docFullName }}
+      </td>
+      <td>
+        <span class="p-column-title">Expiration</span>
+        {{ customer.expirationdate | date : 'MM/dd/yyyy' }}
+      </td>
+      <td>
+        <span class="p-column-title">Age</span>
+        {{ customer.age }}
+      </td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="emptymessage">
+    <tr>
+      <td colspan="12">No Users found.</td>
+    </tr>
+  </ng-template>
+</p-table>
