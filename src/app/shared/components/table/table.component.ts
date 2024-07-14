@@ -34,9 +34,9 @@ import { Observable } from 'rxjs';
 })
 export class TableComponent {
   @Input() users: any[]=[];
+  @Input() loading: boolean | null = false;
   selectedCustomers: { userName: string }[] = [];
   representatives: { userName: string }[] = [];
   statuses: { userName: string }[] = [];
   activityValues: { userName: string }[] = [];
-  loading$: Observable<boolean> | undefined;
 }

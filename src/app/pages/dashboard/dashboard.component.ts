@@ -1,15 +1,5 @@
-import { CurrencyPipe, DatePipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DropdownModule } from 'primeng/dropdown';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { SliderModule } from 'primeng/slider';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
 import { Observable } from 'rxjs';
 import { TableComponent } from '../../shared/components/table/table.component';
 
@@ -31,7 +21,8 @@ interface IUser {
   selector: 'app-dashboard',
   standalone: true,
   imports: [
-    TableComponent
+    TableComponent,
+    AsyncPipe
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
