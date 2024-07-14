@@ -1,0 +1,71 @@
+// @import "../../../core/styles/variables/palette.scss";
+$primary  :red ;
+$secondary : yellow;
+$white :white;
+$border-radius : 8px;
+.side-bar {
+  background-color: #1C3322;
+
+  min-height: 100vh;
+
+  ul {
+    li {
+      i , svg {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+
+      a {
+        color: #ffff;
+      }
+
+      font-size: 18px;
+      line-height: 24px;
+      border-bottom: 1px solid #FFFFFF33;
+
+      .active {
+        color: #E3FECC;
+        font-weight: 600;
+        background-color: #182D1D;
+      }
+    }
+  }
+}
+.row {
+
+    .containers {
+      background-color: #ffff;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .pages {
+
+      background-color: #F1F1F5;
+
+      .top {
+        .p-button {
+          .pi {
+            color: #242424;
+          }
+
+          background-color: #ffff;
+          border: 0;
+          border-color: #ffff;
+          border-radius: 8px !important;
+        }
+
+        i {
+          font-size: 13px;
+          font-weight: bold;
+        }
+
+        span {
+          font-size: 18px;
+          color: #747474;
+          font-weight: 700;
+        }
+      }
+
+    }
+  }
