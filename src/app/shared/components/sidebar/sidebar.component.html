@@ -1,37 +1,61 @@
 <div class="side-bar p-0 ">
-    <ul class=" list-unstyled web d-none d-lg-block">
-      <li class="text-light  "><a class="d-flex gap-3 p-3" routerLink="Dashboard" routerLinkActive="active">
+  <ul class=" list-unstyled web d-none d-lg-block">
+    <li [ngClass]="{'isActiveLi': isActive('/dashboard')}"><a
+        class="d-flex gap-3 cursor-pointer text-decoration-none p-3" routerLink="/dashboard" routerLinkActive="active">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 3.44V5.44" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M21 12H19" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M3 12H5" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M18.36 5.64001L16.24 7.76001" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M5.63989 18.36L7.63989 16.36" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M18.36 18.36L16.24 16.24" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M5.63989 5.64001L7.75989 7.76001" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M18.3639 5.63604C21.8787 9.15076 21.8787 14.8492 18.3639 18.3639C14.8492 21.8787 9.15074 21.8787 5.63604 18.3639C2.12132 14.8492 2.12132 9.15074 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.3639 5.63604" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M10.547 11.042V11.042C9.79196 11.797 9.79196 13.021 10.547 13.775L10.553 13.781C11.308 14.536 12.532 14.536 13.286 13.781V13.781L13.288 13.777L13.289 13.778C14.14 12.927 14.135 11.086 14.106 10.454C14.1 10.325 14.004 10.228 13.874 10.222C13.242 10.193 11.401 10.187 10.55 11.039" stroke="#202224" stroke-width="1.4991" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+          <path d="M12 3.44V5.44" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M21 12H19" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M3 12H5" stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18.36 5.64001L16.24 7.76001" stroke="#202224" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M5.63989 18.36L7.63989 16.36" stroke="#202224" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M18.36 18.36L16.24 16.24" stroke="#202224" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M5.63989 5.64001L7.75989 7.76001" stroke="#202224" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M18.3639 5.63604C21.8787 9.15076 21.8787 14.8492 18.3639 18.3639C14.8492 21.8787 9.15074 21.8787 5.63604 18.3639C2.12132 14.8492 2.12132 9.15074 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.3639 5.63604"
+            stroke="#202224" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M10.547 11.042V11.042C9.79196 11.797 9.79196 13.021 10.547 13.775L10.553 13.781C11.308 14.536 12.532 14.536 13.286 13.781V13.781L13.288 13.777L13.289 13.778C14.14 12.927 14.135 11.086 14.106 10.454C14.1 10.325 14.004 10.228 13.874 10.222C13.242 10.193 11.401 10.187 10.55 11.039"
+            stroke="#202224" stroke-width="1.4991" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
         Dashboard</a></li>
-      <li class="text-light "><a class="d-flex gap-3  p-3" routerLink="Passed" routerLinkActive="active"><i
-            class="pi pi-check-circle"></i>Passed</a></li>
-      <li class="text-light "><a class="d-flex gap-3  p-3" routerLink="Pending" routerLinkActive="active">
-          <i class="pi pi-clock"></i>Pending</a></li>
-      <li class="text-light"><a class="d-flex gap-3 p-3" routerLink="Dublicated" routerLinkActive="active">
+    <li [ngClass]="{'isActiveLi': isActive('/passed')}"><a
+        class="d-flex gap-3 cursor-pointer text-decoration-none p-3" routerLink="/passed" routerLinkActive="active"><i
+          class="pi pi-check-circle"></i>Passed</a></li>
+    <li [ngClass]="{'isActiveLi': isActive('/pending')}"><a
+        class="d-flex gap-3 cursor-pointer text-decoration-none p-3" routerLink="/pending" routerLinkActive="active">
+        <i class="pi pi-clock"></i>Pending</a></li>
+    <li [ngClass]="{'isActiveLi': isActive('/dublicated')}"><a
+        class="d-flex gap-3 cursor-pointer text-decoration-none p-3" routerLink="/dublicated" routerLinkActive="active">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.3858 5.99854H17.4472C18.3076 5.99854 19.0039 6.69483 19.0039 7.55518V17.4483C19.0039 18.3077 18.3076 19.004 17.4472 19.004H6.5547C5.69434 19.004 4.99805 18.3077 4.99805 17.4473V16.0027" stroke="#202224" stroke-linecap="round" stroke-linejoin="round"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99809 16.0027H13.3148C13.9841 16.0027 14.6083 15.6685 14.9795 15.1113L15.7138 14.0088C16.152 13.3516 16.3861 12.5792 16.3861 11.7889V3.99766C16.3861 2.8922 15.4907 1.99683 14.3853 1.99683H4.38109C3.27562 1.99683 2.38025 2.8922 2.38025 3.99766V11.0566C2.38025 11.6779 2.23519 12.2901 1.95808 12.8463L1.10372 14.5551C0.770581 15.2203 1.25478 16.0027 1.99809 16.0027Z" stroke="#202224" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M11.6518 7.59204L8.83763 10.4062L7.14893 8.71851" stroke="#202224" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M6.37863 0.996338V2.99717" stroke="#202224" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M12.3816 0.996338V2.99717" stroke="#202224" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>Dublicated</a></li>
-      <li class="text-light"><a class="d-flex gap-3 p-3" routerLink="Deleted" routerLinkActive="active"><i
-            class="pi pi-trash"></i>Deleted</a></li>
-      <li class="text-light"><a class="d-flex gap-3 p-3" routerLink="Manage-Users" routerLinkActive="active"><i
-            class="pi pi-users"></i>Manage Users</a></li>
-            <li class="text-light"><a class="d-flex gap-3 p-3" routerLink="Settings" routerLinkActive="active"><i
-              class="pi pi-cog"></i>Settings</a></li>
-      <li class="text-light"><a class="d-flex gap-3 p-3" (click)="logout()" routerLinkActive="active"><i class="pi pi-sign-out
+          <path
+            d="M16.3858 5.99854H17.4472C18.3076 5.99854 19.0039 6.69483 19.0039 7.55518V17.4483C19.0039 18.3077 18.3076 19.004 17.4472 19.004H6.5547C5.69434 19.004 4.99805 18.3077 4.99805 17.4473V16.0027"
+            stroke="#202224" stroke-linecap="round" stroke-linejoin="round" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M1.99809 16.0027H13.3148C13.9841 16.0027 14.6083 15.6685 14.9795 15.1113L15.7138 14.0088C16.152 13.3516 16.3861 12.5792 16.3861 11.7889V3.99766C16.3861 2.8922 15.4907 1.99683 14.3853 1.99683H4.38109C3.27562 1.99683 2.38025 2.8922 2.38025 3.99766V11.0566C2.38025 11.6779 2.23519 12.2901 1.95808 12.8463L1.10372 14.5551C0.770581 15.2203 1.25478 16.0027 1.99809 16.0027Z"
+            stroke="#202224" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11.6518 7.59204L8.83763 10.4062L7.14893 8.71851" stroke="#202224" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M6.37863 0.996338V2.99717" stroke="#202224" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12.3816 0.996338V2.99717" stroke="#202224" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>Dublicated</a></li>
+    <li [ngClass]="{'isActiveLi': isActive('/deleted')}" class="sidebar-border"><a class="d-flex gap-3 cursor-pointer text-decoration-none p-3" routerLink="/deleted"
+        routerLinkActive="active"><i class="pi pi-trash"></i>Deleted</a></li>
+    <li [ngClass]="{'isActiveLi': isActive('/manage-Users')}" class="sidebar-border">
+      <p class="admin my-3 px-5">
+        Administration
+      </p>
+      <a class="d-flex gap-3 cursor-pointer text-decoration-none p-3" routerLink="/manage-Users"
+        routerLinkActive="active"><i class="pi pi-users"></i>Manage Users</a>
+    </li>
+    <li [ngClass]="{'isActiveLi': isActive('/settings')}"><a
+        class="d-flex gap-3 cursor-pointer text-decoration-none p-3" routerLink="/settings" routerLinkActive="active"><i
+          class="pi pi-cog"></i>Settings</a></li>
+    <li><a class="d-flex gap-3 cursor-pointer text-decoration-none p-3" (click)="logout()" routerLinkActive="active"><i
+          class="pi pi-sign-out
             "></i>Logout</a></li>
-    </ul>
-  </div>
+  </ul>
+</div>

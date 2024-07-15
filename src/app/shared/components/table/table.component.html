@@ -1,6 +1,7 @@
-<p-table #dt [value]="users" [(selection)]="selectedCustomers" dataKey="id" [rowHover]="true" [rows]="10"
-  [showCurrentPageReport]="true" [rowsPerPageOptions]="[10, 25, 50]" [loading]="loading" [paginator]="false"
+<p-table #dt [value]="users" [(selection)]="selectedCustomers" dataKey="id" [rowHover]="true" [rows]="2"
+  [showCurrentPageReport]="true" [rowsPerPageOptions]="[1, 2, 3]" [loading]="loading" [paginator]="true"
   currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [filterDelay]="0"
+  [showFirstLastIcon]="false" [currentPageReportTemplate]="'Rows per page'"
   [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']">
   <ng-template pTemplate="caption">
     <div class="w-100 d-flex custom-table-header justify-content-between align-items-center">
@@ -9,14 +10,14 @@
           Users
         </p>
       </div>
-    <div class="flex justify-content-between">
-      <p-iconField iconPosition="left">
-        <p-inputIcon>
-          <i class="pi pi-search"></i>
-        </p-inputIcon>
-        <input pInputText type="text" (input)="dt.filterGlobal($event.target, 'contains')" placeholder="Search" />
-      </p-iconField>
-    </div>
+      <div class="flex justify-content-between">
+        <p-iconField iconPosition="left">
+          <p-inputIcon>
+            <i class="pi pi-search"></i>
+          </p-inputIcon>
+          <input pInputText type="text" (input)="dt.filterGlobal($event.target, 'contains')" placeholder="Search" />
+        </p-iconField>
+      </div>
     </div>
   </ng-template>
   <ng-template pTemplate="header">
@@ -136,5 +137,13 @@
     <tr>
       <td colspan="12">No Users found.</td>
     </tr>
+  </ng-template>
+  <ng-template pTemplate="paginatorpreviouspagelinkicon">
+    <p-button class="custom-pagination-arrows" icon="pi pi-arrow-left
+    " type="button"></p-button>
+  </ng-template>
+  <ng-template pTemplate="paginatornextpagelinkicon">
+    <p-button class="custom-pagination-arrows" icon="pi pi-arrow-right
+    " type="button"></p-button>
   </ng-template>
 </p-table>

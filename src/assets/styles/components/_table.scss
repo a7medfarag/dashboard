@@ -1,0 +1,70 @@
+.p-datatable-header {
+  border-radius: 0.75rem 0.75rem 0 0;
+  background-color: #fff;
+}
+.p-datatable .p-paginator-bottom {
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+td {
+  color: #202224;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+th {
+  color: #616161;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-left: 1px solid #fff;
+}
+th:first-of-type {
+  border-left: none;
+}
+.p-datatable {
+  p-paginator {
+
+    .p-paginator{
+      width: 100%;
+      .p-paginator-current{
+        color: #262626;
+        font-size: .75rem;
+        font-weight: 400;
+        order: 4;
+      }
+      .p-paginator-pages{
+        button.p-highlight {
+          border-radius: 50%;
+          background-color: #262626;
+          color: #fff;
+        }
+
+      }
+      .p-ripple{
+        color: #262626;
+        background: transparent;
+        border: none;
+      }
+
+    }
+  }
+}
+.p-paginator-rpp-options{
+  background-color: #FAFAFA;
+  border-color: #DDDFDF;
+  color: #262626;
+  font-size: .875rem;
+  font-weight: 700;
+  border-radius: .5rem;
+}
+.p-paginator-next{
+  order: 3;
+  margin-right: auto;
+}
+.p-paginator-prev{
+  order: 1;
+}
+.p-paginator-pages{
+  order: 2;
+}
+p-dropdown{
+  order: 4;
+}

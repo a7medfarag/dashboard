@@ -6,6 +6,7 @@ import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
 import { MultiSelectModule } from 'primeng/multiselect';
+import { PaginatorModule } from 'primeng/paginator';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { SliderModule } from 'primeng/slider';
 import { TableModule } from 'primeng/table';
@@ -26,6 +27,7 @@ import { Observable } from 'rxjs';
     InputIconModule,
     IconFieldModule,
     InputTextModule,
+    PaginatorModule,
     DatePipe,
     CurrencyPipe,
   ],
