@@ -1,3 +1,30 @@
-<p>
-  otp works!
-</p>
+
+<app-auth-layout [formContent]="otp"></app-auth-layout>
+<ng-template #otp>
+  <form [formGroup]="otpForm" class="otp-form d-flex flex-column justify-content-center align-items-center">
+    <div class="form-header w-100 d-flex flex-column align-items-start">
+      <p class="form-title mb-0">
+        Confirmation
+      </p>
+      <p class="form-subtitle mb-0">
+        OTP sent successfully on email
+      </p>
+      <p class="form-subtitle mb-0">
+        Ha******&#64;gmail.com
+      </p>
+    </div>
+    <div class="otp-custom-width d-flex flex-column gap-2 input-margin">
+      <label for="otp" class="input-label">OTP</label>
+      <p-inputOtp formControlName="otp" [mask]="true" [integerOnly]="true" />
+      <app-timer [hasActionBtn]="true" [timerMinutes]="'3'" [actionBtnLabel]="'Resend'"></app-timer>
+    </div>
+    <div class="submit w-100">
+      <p-button label="Confirm" />
+    </div>
+    <div class="form-footer mt-auto">
+      <p class="mb-0">
+        © 2024 Switch. All Rights Reserved.
+      </p>
+    </div>
+  </form>
+</ng-template>

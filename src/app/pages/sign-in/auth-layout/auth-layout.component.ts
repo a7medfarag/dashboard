@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit, TemplateRef } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -15,15 +16,10 @@ import { PasswordModule } from 'primeng/password';
   templateUrl: './auth-layout.component.html',
   styleUrls: ['./auth-layout.component.scss'],
   standalone: true,
-  imports: [
-    ReactiveFormsModule,
-    InputTextModule,
-    PasswordModule,
-    CheckboxModule,
-    ButtonModule,
-  ],
+  imports: [CommonModule],
 })
 export class AuthLayoutComponent implements OnInit {
+  @Input() formContent!: TemplateRef<any>;
   loginForm!: FormGroup;
   constructor(private fb: FormBuilder) {}
 
