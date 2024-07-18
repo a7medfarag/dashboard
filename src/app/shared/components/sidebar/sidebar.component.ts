@@ -19,6 +19,10 @@ export class SidebarComponent {
   isActive(routerPath: string): boolean {
     return this.router.url === routerPath;
   }
+  changeStrokeColorIfActiveRouter(routerPath: string): string {
+    if(this.router.url === routerPath) return '#fff';
+    else return '#202224'
+  }
 	logout() {
 		// this.authService.logout();
 		this.router.navigateByUrl('/sign-in');

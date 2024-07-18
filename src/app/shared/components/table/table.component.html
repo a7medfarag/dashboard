@@ -1,8 +1,7 @@
 <p-table #dt [value]="users" [(selection)]="selectedCustomers" dataKey="id" [rowHover]="true" [rows]="2"
-  [showCurrentPageReport]="true" [rowsPerPageOptions]="[1, 2, 3]" [loading]="loading" [paginator]="true"
-  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [filterDelay]="0"
-  [showFirstLastIcon]="false" [currentPageReportTemplate]="'Rows per page'"
-  [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']">
+  [showCurrentPageReport]="true" [rowsPerPageOptions]="[1, 2, 3,4,5]" [loading]="loading" [paginator]="true"
+  [currentPageReportTemplate]="'{first} - {last} of {totalRecords}'"
+  [showFirstLastIcon]="false">
   <ng-template pTemplate="caption">
     <div class="w-100 d-flex custom-table-header justify-content-between align-items-center">
       <div class="table-title">
@@ -10,75 +9,126 @@
           Users
         </p>
       </div>
-      <div class="flex justify-content-between">
+      <div class="d-flex justify-content-between">
         <p-iconField iconPosition="left">
           <p-inputIcon>
             <i class="pi pi-search"></i>
           </p-inputIcon>
           <input pInputText type="text" (input)="dt.filterGlobal($event.target, 'contains')" placeholder="Search" />
         </p-iconField>
+        <div class="table-columns ms-3 d-flex justify-content-center align-items-center">
+          <div class="column-icon">
+            <i class="pi pi-cog"></i>
+          </div>
+          <p class="mb-0">
+            Columns
+          </p>
+        </div>
+        <div class="table-filters ms-3 d-flex align-items-center">
+          <div class="column-icon">
+            <i class="pi pi-sliders-v"></i>
+          </div>
+          <p class="mb-0">
+            Filters
+          </p>
+        </div>
       </div>
     </div>
   </ng-template>
   <ng-template pTemplate="header">
     <tr>
-      <th style="width: 4rem">
+      <th>
         <p-tableHeaderCheckbox />
       </th>
-      <th pSortableColumn="name" style="min-width: 14rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="name">
+        <p class="flex justify-content-between align-items-center">
           ID
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="country.name" style="min-width: 14rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="country.name">
+        <p class="flex justify-content-between align-items-center">
           Nationality
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="representative.name" style="min-width: 14rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="representative.name">
+        <p class="flex justify-content-between align-items-center">
           Reference ID
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="date" style="min-width: 10rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="date">
+        <p class="flex justify-content-between align-items-center">
           Date
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="balance" style="min-width: 10rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="balance">
+        <p class="flex justify-content-between align-items-center">
           SDK Version
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="status" style="min-width: 10rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="status">
+        <p class="flex justify-content-between align-items-center">
           Device Model
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="activity" style="min-width: 10rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
           Face Scan
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="activity" style="min-width: 10rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
           Doc. Front
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="activity" style="min-width: 10rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
           Doc. Date Full Name
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="activity" style="min-width: 10rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
           DOB Expiration
-        </div>
+        </p>
       </th>
-      <th pSortableColumn="activity" style="min-width: 10rem">
-        <div class="flex justify-content-between align-items-center">
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
           Age Of ID
-        </div>
+        </p>
+      </th>
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
+          Doc Type
+        </p>
+      </th>
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
+          NFC Data / NCF Cert.
+        </p>
+      </th>
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
+          Address Photo ID
+        </p>
+      </th>
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
+          Compatibility rate Doc.
+        </p>
+      </th>
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
+          Capture / Excepted Media check
+        </p>
+      </th>
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
+          Tampering Check
+        </p>
+      </th>
+      <th pSortableColumn="activity">
+        <p class="flex justify-content-between align-items-center">
+          Actions
+        </p>
       </th>
     </tr>
   </ng-template>
@@ -88,54 +138,109 @@
         <p-tableCheckbox [value]="customer" />
       </td>
       <td>
-        <span class="p-column-title">ID</span>
-        {{ customer.id }}
+        <p class="p-column-title">ID</p>
+        <p class="ml-1 vertical-align-middle">{{ customer.id }}</p>
+
       </td>
       <td>
-        <span class="p-column-title">Nationality</span>
-        <span class="ml-1 vertical-align-middle">{{ customer.nationality }}</span>
+        <p class="p-column-title">Nationality</p>
+        <p class="ml-1 vertical-align-middle">{{ customer.nationality }}</p>
       </td>
       <td>
-        <span class="p-column-title">Reference Id</span>
-        <span class="ml-1 vertical-align-middle">{{ customer.referenceId }}</span>
+        <p class="p-column-title">Reference Id</p>
+        <p class="ml-1 vertical-align-middle">{{ customer.referenceId }}</p>
       </td>
       <td>
-        <span class="p-column-title">Date</span>
-        {{ customer.date | date : 'MM/dd/yyyy' }}
+        <p class="p-column-title">Date</p>
+
+        <p class="ml-1 vertical-align-middle">{{ customer.date | date : 'MM/dd/yyyy' }}</p>
       </td>
       <td>
-        <span class="p-column-title">SDK Version</span>
-        {{ customer.sdkVersion }}
+        <p class="p-column-title">SDK Version</p>
+
+        <p class="ml-1 vertical-align-middle">{{ customer.sdkVersion }}</p>
       </td>
       <td>
-        <span class="p-column-title">Device Model</span>
-        <img [src]="customer.deviceModel" alt="Device Model">
+        <p class="p-column-title">Device Model</p>
+        <img class="img-fluid custom-radius device-model" [src]="customer.deviceModel" alt="Device Model">
+
       </td>
       <td>
-        <span class="p-column-title">Face Scan</span>
-        <img [src]="customer.faceScan" alt="Face Scan">
+        <p class="p-column-title">Face Scan</p>
+        <img class="img-fluid custom-radius face-scan" [src]="customer.faceScan" alt="Face Scan">
       </td>
       <td>
-        <span class="p-column-title">Doc Fron</span>
-        <img [src]="customer.docFront" alt="Doc Fron">
+        <p class="p-column-title"> Doc. Front</p>
+        <img class="img-fluid custom-radius doc-front" [src]="customer.docFront" alt="Doc Fron">
       </td>
       <td>
-        <span class="p-column-title">Full Name</span>
-        {{ customer.docFullName }}
+        <p class="p-column-title">Doc. Date Full Name</p>
+        <p class="ml-1 vertical-align-middle">{{ customer.docFullName }}</p>
+
       </td>
       <td>
-        <span class="p-column-title">Expiration</span>
-        {{ customer.expirationdate | date : 'MM/dd/yyyy' }}
+        <p class="p-column-title">DOB Expiration </p>
+        <p class="ml-1 vertical-align-middle">{{ customer.expirationdate | date : 'MM/dd/yyyy' }}</p>
+
       </td>
       <td>
-        <span class="p-column-title">Age</span>
-        {{ customer.age }}
+        <p class="p-column-title">Age Of ID</p>
+        <p class="ml-1 vertical-align-middle">{{ customer.age }}</p>
+
+      </td>
+      <td>
+        <p class="p-column-title">Doc Type</p>
+        <p class="ml-1 vertical-align-middle">{{ customer.docType }}</p>
+
+      </td>
+      <td>
+        <p class="p-column-title"> NFC Data / NCF Cert.</p>
+        <p class="ml-1 vertical-align-middle">{{ customer.nFCData }}</p>
+
+      </td>
+      <td>
+        <p class="p-column-title">Address Photo ID </p>
+        <img class="img-fluid custom-radius photo-id" [src]="customer.addressPhotoID" alt="Device Model">
+
+      </td>
+      <td>
+        <p class="p-column-title">Compatibility rate Doc.</p>
+        <p class="ml-1 vertical-align-middle">{{ customer.compatibilityRateDoc }}</p>
+
+      </td>
+      <td>
+        <p class="p-column-title">Capture / Excepted Media check</p>
+        <div class="w-100 d-flex justify-content-center">
+          <svg class="custom-checked-icon" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.125 12C24.125 18.4203 18.9203 23.625 12.5 23.625C6.07967 23.625 0.875 18.4203 0.875 12C0.875 5.57967 6.07967 0.375 12.5 0.375C18.9203 0.375 24.125 5.57967 24.125 12ZM11.1553 18.1553L19.7803 9.53034C20.0732 9.23747 20.0732 8.76258 19.7803 8.4697L18.7197 7.40906C18.4268 7.11614 17.9519 7.11614 17.659 7.40906L10.625 14.443L7.34098 11.159C7.04811 10.8661 6.57322 10.8661 6.2803 11.159L5.21966 12.2197C4.92678 12.5125 4.92678 12.9874 5.21966 13.2803L10.0947 18.1553C10.3876 18.4482 10.8624 18.4482 11.1553 18.1553Z"
+              fill="#00B69B" />
+          </svg>
+        </div>
+
+      </td>
+      <td>
+        <p class="p-column-title">Tampering Check </p>
+        <div class="w-100 d-flex justify-content-center">
+          <svg class="custom-checked-icon" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.125 12C24.125 18.4203 18.9203 23.625 12.5 23.625C6.07967 23.625 0.875 18.4203 0.875 12C0.875 5.57967 6.07967 0.375 12.5 0.375C18.9203 0.375 24.125 5.57967 24.125 12ZM11.1553 18.1553L19.7803 9.53034C20.0732 9.23747 20.0732 8.76258 19.7803 8.4697L18.7197 7.40906C18.4268 7.11614 17.9519 7.11614 17.659 7.40906L10.625 14.443L7.34098 11.159C7.04811 10.8661 6.57322 10.8661 6.2803 11.159L5.21966 12.2197C4.92678 12.5125 4.92678 12.9874 5.21966 13.2803L10.0947 18.1553C10.3876 18.4482 10.8624 18.4482 11.1553 18.1553Z"
+              fill="#00B69B" />
+          </svg>
+        </div>
+
+      </td>
+      <td>
+        <p class="p-column-title">Actions</p>
+        <div class="delete-action d-flex flex-column justify-content-center align-items-center">
+          <i class="pi pi-trash"></i>
+        </div>
       </td>
     </tr>
   </ng-template>
   <ng-template pTemplate="emptymessage">
     <tr>
-      <td colspan="12">No Users found.</td>
+      <td colspan="19">No Users found.</td>
     </tr>
   </ng-template>
   <ng-template pTemplate="paginatorpreviouspagelinkicon">
@@ -146,4 +251,9 @@
     <p-button class="custom-pagination-arrows" icon="pi pi-arrow-right
     " type="button"></p-button>
   </ng-template>
+  <ng-template pTemplate="paginatornextpagelinkicon">
+    <p-button class="custom-pagination-arrows" icon="pi pi-arrow-right
+    " type="button"></p-button>
+  </ng-template>
 </p-table>
+
