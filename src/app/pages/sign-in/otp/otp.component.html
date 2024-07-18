@@ -13,7 +13,7 @@
         Ha******&#64;gmail.com
       </p>
     </div>
-    <div class="otp-custom-width d-flex flex-column gap-2 input-margin">
+    <div class="otp-custom-width d-flex flex-column input-margin">
       <label for="otp" class="input-label">OTP</label>
       <p-inputOtp formControlName="otp" [mask]="true" [integerOnly]="true" />
       <app-timer [hasActionBtn]="true" [timerMinutes]="'3'" [actionBtnLabel]="'Resend'"></app-timer>
