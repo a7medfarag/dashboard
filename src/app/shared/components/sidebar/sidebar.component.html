@@ -1,7 +1,7 @@
 <div class="side-bar p-0 ">
   <ul class=" list-unstyled web d-none d-lg-block">
-    <li [ngClass]="{'isActiveLi': isActive('/dashboard')}"><a
-        class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/dashboard" routerLinkActive="active">
+    <li [ngClass]="{'isActiveLi': isActive('/dashboard')}"><a class="d-flex gap-3 cursor-pointer text-decoration-none"
+        routerLink="/dashboard" routerLinkActive="active">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 3.44V5.44" [attr.stroke]="changeStrokeColorIfActiveRouter('/dashboard')" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round" />
@@ -32,8 +32,8 @@
     <li [ngClass]="{'isActiveLi': isActive('/pending')}"><a class="d-flex gap-3 cursor-pointer text-decoration-none"
         routerLink="/pending" routerLinkActive="active">
         <i class="pi pi-clock"></i>Pending</a></li>
-    <li [ngClass]="{'isActiveLi': isActive('/dublicated')}"><a
-        class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/dublicated" routerLinkActive="active">
+    <li [ngClass]="{'isActiveLi': isActive('/dublicated')}"><a class="d-flex gap-3 cursor-pointer text-decoration-none"
+        routerLink="/dublicated" routerLinkActive="active">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M16.3858 5.99854H17.4472C18.3076 5.99854 19.0039 6.69483 19.0039 7.55518V17.4483C19.0039 18.3077 18.3076 19.004 17.4472 19.004H6.5547C5.69434 19.004 4.99805 18.3077 4.99805 17.4473V16.0027"
@@ -58,8 +58,7 @@
       <p class="admin my-3 px-5">
         Administration
       </p>
-      <a class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/manage-Users"
-        routerLinkActive="active">
+      <a class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/manage-Users" routerLinkActive="active">
         <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M2.57812 1.76562C3.38021 0.963542 4.35417 0.5625 5.5 0.5625C6.64583 0.5625 7.61979 0.963542 8.42188 1.76562C9.22396 2.56771 9.625 3.54167 9.625 4.6875C9.625 6.09115 9.05208 7.20833 7.90625 8.03906C8.96615 8.55469 9.76823 9.29948 10.3125 10.2734C10.8568 9.29948 11.6589 8.55469 12.7188 8.03906C11.5729 7.20833 11 6.09115 11 4.6875C11 3.54167 11.401 2.56771 12.2031 1.76562C13.0052 0.963542 13.9792 0.5625 15.125 0.5625C16.2708 0.5625 17.2448 0.963542 18.0469 1.76562C18.849 2.56771 19.25 3.54167 19.25 4.6875C19.25 6.09115 18.6771 7.20833 17.5312 8.03906C18.4766 8.4974 19.2214 9.17057 19.7656 10.0586C20.3385 10.918 20.625 11.8776 20.625 12.9375H19.25C19.25 11.7917 18.849 10.8177 18.0469 10.0156C17.2448 9.21354 16.2708 8.8125 15.125 8.8125C13.9792 8.8125 13.0052 9.21354 12.2031 10.0156C11.401 10.8177 11 11.7917 11 12.9375H9.625C9.625 11.7917 9.22396 10.8177 8.42188 10.0156C7.61979 9.21354 6.64583 8.8125 5.5 8.8125C4.35417 8.8125 3.38021 9.21354 2.57812 10.0156C1.77604 10.8177 1.375 11.7917 1.375 12.9375H0C0 11.8776 0.272135 10.918 0.816406 10.0586C1.38932 9.17057 2.14844 8.4974 3.09375 8.03906C1.94792 7.20833 1.375 6.09115 1.375 4.6875C1.375 3.54167 1.77604 2.56771 2.57812 1.76562ZM7.43359 2.75391C6.91797 2.20964 6.27344 1.9375 5.5 1.9375C4.72656 1.9375 4.06771 2.20964 3.52344 2.75391C3.00781 3.26953 2.75 3.91406 2.75 4.6875C2.75 5.46094 3.00781 6.11979 3.52344 6.66406C4.06771 7.17969 4.72656 7.4375 5.5 7.4375C6.27344 7.4375 6.91797 7.17969 7.43359 6.66406C7.97786 6.11979 8.25 5.46094 8.25 4.6875C8.25 3.91406 7.97786 3.26953 7.43359 2.75391ZM17.0586 2.75391C16.543 2.20964 15.8984 1.9375 15.125 1.9375C14.3516 1.9375 13.6927 2.20964 13.1484 2.75391C12.6328 3.26953 12.375 3.91406 12.375 4.6875C12.375 5.46094 12.6328 6.11979 13.1484 6.66406C13.6927 7.17969 14.3516 7.4375 15.125 7.4375C15.8984 7.4375 16.543 7.17969 17.0586 6.66406C17.6029 6.11979 17.875 5.46094 17.875 4.6875C17.875 3.91406 17.6029 3.26953 17.0586 2.75391Z"
@@ -68,8 +67,7 @@
         Manage Users</a>
     </li>
     <li [ngClass]="{'isActiveLi': isActive('/manage-roles')}">
-      <a class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/manage-roles"
-        routerLinkActive="active">
+      <a class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/manage-roles" routerLinkActive="active">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 8V6C20 4.34315 18.6569 3 17 3H5C3.34315 3 2 4.34315 2 6V15C2 16.6569 3.34315 18 5 18H12"
             [attr.stroke]="changeStrokeColorIfActiveRouter('/manage-roles')" stroke-width="1.5" stroke-linecap="round"
@@ -96,8 +94,7 @@
         Manage Roles</a>
     </li>
     <li [ngClass]="{'isActiveLi': isActive('/manage-keys')}" class="sidebar-border">
-      <a class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/manage-keys"
-        routerLinkActive="active">
+      <a class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/manage-keys" routerLinkActive="active">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M15.031 9.34202C15.031 9.13502 14.863 8.96802 14.656 8.96802C14.449 8.96902 14.281 9.13702 14.281 9.34402C14.281 9.55102 14.449 9.71902 14.656 9.71802C14.863 9.71802 15.031 9.55002 15.031 9.34302"
@@ -112,18 +109,20 @@
 
         Manage Keys</a>
     </li>
-    <li [ngClass]="{'isActiveLi': isActive('/profile')}"><a
-        class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/profile"
-        routerLinkActive="active"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+    <li [ngClass]="{'isActiveLi': isActive('/profile')}"><a class="d-flex gap-3 cursor-pointer text-decoration-none"
+        routerLink="/profile" routerLinkActive="active"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M18.3639 5.63604C21.8787 9.15076 21.8787 14.8492 18.3639 18.3639C14.8492 21.8787 9.15074 21.8787 5.63604 18.3639C2.12132 14.8492 2.12132 9.15074 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.3639 5.63604"
-            [attr.stroke]="changeStrokeColorIfActiveRouter('/profile')" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            [attr.stroke]="changeStrokeColorIfActiveRouter('/profile')" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
           <path d="M17.3071 19.257C16.9231 17.417 14.7051 16 12.0001 16C9.29512 16 7.07712 17.417 6.69312 19.257"
-            [attr.stroke]="changeStrokeColorIfActiveRouter('/profile')" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            [attr.stroke]="changeStrokeColorIfActiveRouter('/profile')" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
           <path
             d="M14.1213 7.87868C15.2929 9.05025 15.2929 10.9497 14.1213 12.1213C12.9497 13.2929 11.0502 13.2929 9.87868 12.1213C8.70711 10.9497 8.70711 9.05025 9.87868 7.87868C11.0502 6.70711 12.9497 6.70711 14.1213 7.87868"
-            [attr.stroke]="changeStrokeColorIfActiveRouter('/profile')" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            [attr.stroke]="changeStrokeColorIfActiveRouter('/profile')" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
         Profile</a></li>
     <li><a class="d-flex gap-3 cursor-pointer text-decoration-none" (click)="logout()" routerLinkActive="active"><i
