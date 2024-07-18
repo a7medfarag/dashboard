@@ -38,5 +38,8 @@ p-inputotp .p-inputtext {
 }
 .p-inputotp {
   gap: 0;
+.p-input-icon-right > .p-icon-wrapper, .p-input-icon-right > i:last-of-type{
+right: 1.5rem;
+}
 }
 }
