@@ -1,0 +1,32 @@
+.auth-layout {
+
+.p-inputtext {
+  background: #FAFAFA;
+  border: 1px solid #DDDFDF;
+  border-radius: 1rem;
+  width: 100%;
+  height: 3.125rem;
+  padding-inline: 1.5rem;
+}
+.p-inputtext.ng-dirty.ng-invalid {
+  border-color: #E52031;
+}
+.p-password{
+  width: 100%;
+}
+.p-password .p-inputtext::placeholder,
+.p-inputtext::placeholder {
+  color: #838C94;
+  font-size: .875rem;
+  line-height: 1;
+}
+.p-checkbox-box	 {
+  border-color: #2387BF;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.p-checkbox-box.p-highlight	 {
+  background-color: #2387BF;
+}
+
+}
