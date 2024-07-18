@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-sign-in',
   standalone: true,
-  imports: [AuthLayoutComponent],
+  imports: [RouterModule],
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.scss'
 })

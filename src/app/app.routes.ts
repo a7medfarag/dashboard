@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
+import { LoginComponent } from './pages/sign-in/login/login.component';
+import { OtpComponent } from './pages/sign-in/otp/otp.component';
 
 export const routes: Routes = [
   {
@@ -14,6 +16,19 @@ export const routes: Routes = [
       import('./pages/sign-in/sign-in.component').then(
         (m) => m.SignInComponent
       ),
+  },
+  {
+    path: 'sign-in',
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent,
+      },
+      {
+        path: 'otp',
+        component: OtpComponent,
+      },
+    ],
   },
   {
     path: 'dashboard',
