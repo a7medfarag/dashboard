@@ -1,0 +1,51 @@
+.popup {
+  .p-icon-field input {
+    width: 100%;
+    height: 2.5rem;
+    background: #FAFAFA;
+    border: 1px solid #DDDFDF;
+    border-radius: .5rem;
+    padding-inline-start: 2.75rem;
+    outline: none;
+  }
+  .p-icon-field input::placeholder {
+    color: #616161;
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+  .p-input-icon {
+    color: #616161;
+    font-size: 1.1rem;
+    line-height: 1;
+    font-weight: 700;
+    left: 0.9375rem;
+}
+p-inputswitch {
+  width: 2.5rem;
+  height: 1.25rem;
+  .p-inputswitch {
+    width: 2.5rem;
+  height: 1.25rem;
+  }
+  .p-inputswitch-slider::before {
+    width: 1rem;
+    height: 1rem;
+    margin-top: -0.515rem;
+    left: 0.104375rem;
+  }
+}
+.popup-footer .reset .p-button {
+  background-color: transparent;
+  color: #2387BF;
+}
+.popup-footer .save .p-button {
+  background-color: #2387BF;
+  color: #fff;
+}
+.p-button{
+  width: 100%;
+  border: 1px solid #2387BF;
+  border-radius: .5rem;
+  font-weight: 700;
+}
+}

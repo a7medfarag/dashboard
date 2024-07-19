@@ -1,0 +1,279 @@
+  <app-popup-modal [popupHeader]="header" [popupContent]="content" [popupFooter]="footer"></app-popup-modal>
+
+<ng-template #header>
+  <div class="columns-header w-100 d-flex justify-content-between align-items-center">
+    <div class="columns-header__title">
+      <p class="mb-0">
+        Configure columns
+      </p>
+    </div>
+    <div class="columns-header__close d-flex justify-content-center align-items-center">
+      <i class="pi pi-times"></i>
+    </div>
+  </div>
+</ng-template>
+<ng-template #content>
+  <div class="serach-input">
+    <p-iconField iconPosition="left">
+      <p-inputIcon>
+        <i class="pi pi-search"></i>
+      </p-inputIcon>
+      <input pInputText type="text" (input)="getValue($event)" placeholder="Search field" />
+    </p-iconField>
+  </div>
+  <div class="columns-inputs d-flex flex-column w-100">
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">ID</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Nationality</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Reference ID</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Date</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">SDK Version</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Device Model</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Face Scan</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Doc. Front </p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Doc. Date Full Name</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Date of Birth Expiration </p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Age Of ID</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+    <div class="column-input w-100 d-flex justify-content-between align-items-center">
+      <div class="column-input__label d-flex align-items-center">
+        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="6.5" cy="11.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="6.5" r="1.5" fill="#646464"/>
+          <circle cx="1.5" cy="11.5" r="1.5" fill="#646464"/>
+          </svg>
+
+        <p class="mb-0">Doc Type</p>
+      </div>
+      <div class="column-input__toggle d-flex flex-column justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+    </div>
+
+  </div>
+</ng-template>
+<ng-template #footer>
+  <div class="popup-footer w-100 d-flex justify-content-center">
+    <div class="btns d-flex justify-content-center align-items-center">
+      <div class="reset">
+        <p-button label="Reset" />
+      </div>
+      <div class="save">
+        <p-button label="Save" />
+      </div>
+    </div>
+  </div>
+</ng-template>

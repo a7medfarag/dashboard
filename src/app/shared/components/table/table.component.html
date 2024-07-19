@@ -1,4 +1,4 @@
-<p-table #dt [value]="users" [(selection)]="selectedCustomers" dataKey="id" [rowHover]="true" [rows]="2"
+<p-table class="table" #dt [value]="users" [(selection)]="selectedCustomers" dataKey="id" [rowHover]="true" [rows]="2"
   [showCurrentPageReport]="true" [rowsPerPageOptions]="[1, 2, 3,4,5]" [loading]="loading" [paginator]="true"
   [currentPageReportTemplate]="'{first} - {last} of {totalRecords}'"
   [showFirstLastIcon]="false">
