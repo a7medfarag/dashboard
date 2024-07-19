@@ -1,0 +1,20 @@
+.auth-layout {
+  .p-button {
+    width: 100%;
+    padding: 0.625rem .5rem;
+    border-radius: 1rem;
+    height: 3.375rem;
+    margin-top: 2.0625rem;
+    background-color: #2387BF;
+  }
+  .p-button-label {
+    font-size: .875rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .p-disabled {
+    background-color: #96C2E2;
+  }
+
+}

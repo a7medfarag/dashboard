@@ -1,0 +1,85 @@
+.auth-layout {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0;
+
+  .auth-bg {
+    min-height: 100vh;
+    height: 100%;
+    background-image: url('../../../../assets/images/auth-layout.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position: bottom right;
+    background-size: 100%;
+
+    .logo-container {
+      width: 100%;
+    }
+  }
+}
+
+.input-label {
+  font-size: .875rem;
+  line-height: 1;
+  color: #2A3042;
+}
+
+.input-margin {
+  margin-bottom: 1.5rem;
+}
+
+form {
+  width: 25.625rem;
+  height: 88%;
+}
+
+.remember-me label {
+  margin-inline-start: 0.6875rem;
+}
+
+.forget-password a {
+  color: #2387BF;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  cursor: pointer;
+}
+
+.password-margin {
+  margin-bottom: 1.9375rem;
+}
+
+.form-header {
+  margin-bottom: 2.5625rem;
+
+  .form-title {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+    color: #2A3042;
+    font-weight: 700;
+  }
+
+  .form-subtitle {
+    font-size: 1rem;
+    color: #838C94;
+    line-height: 1;
+  }
+}
+
+.form-footer {
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  color: #A3AED0;
+  font-family: 'DM Sans';
+  margin-bottom: 1.8125rem;
+}
+.error-message {
+  font-size: .75rem;
+  line-height: 1rem;
+  color: #E52031;
+  font-weight: 600;
+}
+.error-message p{
+  margin-inline-start: .25rem;
+}
