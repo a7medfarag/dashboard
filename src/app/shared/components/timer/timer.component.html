@@ -1,0 +1,20 @@
+<div>
+  <!-- Timer Counter -->
+  <div class="w-100 d-flex align-items-center justify-content-between timer-value">
+    <span> {{ displayNumber}}</span>
+    <span> 3 attempts left</span>
+  </div>
+  <!-- Action BTN -->
+  <div *ngIf="hasActionBtn" class="timer-action w-100 d-flex align-items-center justify-content-center">
+    <p class="mb-0">
+      Didn’t receive OTP?
+    </p>
+    <span class="resendBtn"
+      [ngClass]="{'cursor-pointer':timerEnded, 'cursor-not-allowed pointer-events-none': !timerEnded}"
+      (click)="onActionBtnClicked()">
+      {{actionBtnLabel}}
+    </span>
+  </div>
+
+
+</div>

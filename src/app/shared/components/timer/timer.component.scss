@@ -1,0 +1,19 @@
+.timer-action {
+  margin-top: 2rem;
+  margin-inline: auto;
+  color: #262626;
+  .resendBtn{
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: #2387BF;
+    margin-inline-start: .5rem;
+  }
+}
+.timer-value {
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: #262626;
+  margin-top: .25rem;
+}

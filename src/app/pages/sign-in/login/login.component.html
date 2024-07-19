@@ -1,1 +1,45 @@
-<app-auth-layout></app-auth-layout>
+<app-auth-layout [formContent]="login"></app-auth-layout>
+<ng-template #login>
+  <form [formGroup]="loginForm" class="login-form d-flex flex-column justify-content-center align-items-center">
+    <div class="form-header w-100 d-flex flex-column align-items-start">
+      <p class="form-title mb-0">
+        Sign In
+      </p>
+      <p class="form-subtitle mb-0">
+        Enter your email and password to sign in!
+      </p>
+    </div>
+    <div class="w-100 d-flex flex-column gap-2 input-margin">
+      <label for="email" class="input-label">Email*</label>
+      <input formControlName="email" class="ng-invalid ng-dirty" pInputText id="email" placeholder="mail@switch.com"
+        aria-describedby="email-help" />
+        <div class="error-message d-flex align-items-center">
+          <i class="pi pi-exclamation-circle"></i>
+          <p class="mb-0">
+            Please enter Correct Email
+          </p>
+        </div>
+    </div>
+    <div class="w-100 d-flex flex-column gap-2 password-margin">
+      <label for="password" class="input-label">Password*</label>
+      <p-password [placeholder]="'Min. 8 characters'" formControlName="password" [toggleMask]="true" />
+    </div>
+    <div class="user-actions w-100 d-flex justify-content-between">
+      <div class="remember-me d-flex align-items-center">
+        <p-checkbox formControlName="keepMeLogged" value="false" inputId="ny" />
+        <label class="input-label mb-0" for="ny">Keep me logged in</label>
+      </div>
+      <div class="forget-password">
+        <a routerLink="/forget-password" class="text-decoration-none">Forgot password?</a>
+      </div>
+    </div>
+    <div class="submit w-100">
+      <p-button label="Sign In" [disabled]="true" />
+    </div>
+    <div class="form-footer mt-auto">
+      <p class="mb-0">
+        © 2024 Switch. All Rights Reserved.
+      </p>
+    </div>
+  </form>
+</ng-template>
