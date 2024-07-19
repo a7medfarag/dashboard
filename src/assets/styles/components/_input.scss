@@ -1,4 +1,4 @@
-.auth-layout {
+// .auth-layout {
 
 .p-inputtext {
   background: #FAFAFA;
@@ -41,5 +41,12 @@ p-inputotp .p-inputtext {
 .p-input-icon-right > .p-icon-wrapper, .p-input-icon-right > i:last-of-type{
 right: 1.5rem;
 }
+// }
+.p-inputswitch-checked .p-inputswitch-slider {
+  background-color: #31B78F;
 }
 }
+.p-inputswitch-slider {
+  background-color: #9C9C9C;
+}
+

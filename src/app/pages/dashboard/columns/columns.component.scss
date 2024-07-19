@@ -1,0 +1,46 @@
+.columns-header{
+
+  color: #252535;
+  &__title {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+  &__close {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    color: #262626;
+  }
+}
+.serach-input{
+  padding-inline: 1.25rem;
+}
+.columns-inputs {
+  .column-input {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #262626;
+    font-weight: 600;
+    &__label svg{
+      margin-inline-end: 0.4375rem;
+    }
+    padding: 0.65rem 1.25rem 0.625rem 1.25rem;
+  }
+  .hr {
+    height: 1px;
+    width: 100%;
+    color: #D8DCE0;
+    hr {
+      margin: 0;
+    }
+  }
+}
+.save,
+.reset {
+width: 9rem;
+height: 2.75rem;
+}
+.reset{
+  margin-inline-end: 0.3125rem;
+}

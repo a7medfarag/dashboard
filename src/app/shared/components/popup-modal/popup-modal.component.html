@@ -1,0 +1,19 @@
+<div class="popup">
+  <div class="popupSide d-flex flex-column justify-content-start align-items-start">
+      <div  class="addPopop d-flex flex-column">
+          <div  class="popupHeader d-flex flex-row justify-content-between">
+              <ng-template [ngTemplateOutlet]="popupHeader">
+              </ng-template>
+          </div>
+          <div class="popup-content">
+            <ng-template [ngTemplateOutlet]="popupContent">
+            </ng-template>
+          </div>
+          <div class="popup-footer">
+            <ng-template [ngTemplateOutlet]="popupFooter">
+            </ng-template>
+          </div>
+
+      </div>
+  </div>
+</div>
