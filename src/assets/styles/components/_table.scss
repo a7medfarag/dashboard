@@ -1,6 +1,6 @@
 .p-datatable-header {
   border-radius: 0.75rem 0.75rem 0 0;
-  background-color: #fff;
+  background-color: $white-color;
 }
 
 .p-datatable .p-paginator-bottom {
@@ -8,7 +8,7 @@
 }
 
 td {
-  color: #202224;
+  color: $gray-color-90;
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -24,7 +24,7 @@ td {
     width: 2rem;
     height: 2rem;
     background-color: #EFEFEF;
-    color: #262626;
+    color: $gray-color-70;
     padding: 8px;
     gap: 8px;
     border-radius: 8px;
@@ -41,11 +41,11 @@ td:first-of-type {
 }
 
 th {
-  color: #616161;
+  color: $gray-color-50;
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5rem;
-  border-left: 1px solid #fff;
+  border-left: 1px solid $white-color;
   padding: .75rem;
 
   p {
@@ -71,7 +71,7 @@ th:first-of-type {
       width: 100%;
 
       .p-paginator-current {
-        color: #262626;
+        color: $gray-color-70;
         font-size: .75rem;
         font-weight: 400;
         order: 6;
@@ -80,14 +80,14 @@ th:first-of-type {
       .p-paginator-pages {
         button.p-highlight {
           border-radius: 50%;
-          background-color: #262626;
-          color: #fff;
+          background-color: $gray-color-70;
+          color: $white-color;
         }
 
       }
 
       .p-ripple {
-        color: #262626;
+        color: $gray-color-70;
         background: transparent;
         border: none;
       }
@@ -97,9 +97,9 @@ th:first-of-type {
 }
 
 .p-paginator-rpp-options {
-  background-color: #FAFAFA;
-  border-color: #DDDFDF;
-  color: #262626;
+  background-color: $gray-color-5;
+  border-color: $gray-color-10;
+  color: $gray-color-70;
   font-size: .875rem;
   font-weight: 700;
   border-radius: .5rem;
@@ -126,7 +126,7 @@ p-dropdown {
 
 p-dropdown::before {
   content: "Rows per page";
-  color: #262626;
+  color: $gray-color-70;
   font-size: .75rem;
   font-weight: 400;
 }
@@ -177,11 +177,12 @@ p-dropdown::before {
 }
 
 .p-checkbox-box {
-  border-color: #616161;
+  border-color: $gray-color-50;
+  border-width: 1px;
 }
 
 .p-datatable-header .p-input-icon {
-  color: #616161;
+  color: $gray-color-50;
   font-size: 1.1rem;
   line-height: 1;
   font-weight: 700;
@@ -190,23 +191,23 @@ p-dropdown::before {
 .p-icon-field input {
   width: 14.5rem;
   height: 2.5rem;
-  background: #FAFAFA;
-  border: 1px solid #DDDFDF;
+  background: $gray-color-5;
+  border: 1px solid $gray-color-10;
   border-radius: .5rem;
 }
 
 .p-icon-field input::placeholder {
-  color: #616161;
+  color: $gray-color-50;
   font-size: .75rem;
   line-height: 1rem;
 }
 
 .table-filters,
 .table-columns {
-  color: #262626;
+  color: $gray-color-70;
   font-size: .75rem;
   font-weight: 700;
-  background-color: #FAFAFA;
+  background-color: $gray-color-5;
   padding: .5rem .75rem;
   gap: .5rem;
   width: 6.8125rem;

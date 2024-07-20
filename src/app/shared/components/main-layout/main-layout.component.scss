@@ -21,3 +21,30 @@
     margin-inline-start: 1.875rem;
     margin-top: 1.875rem;
 }
+.user-profile {
+  margin-inline-end: 4.9375rem;
+
+  .user-img{
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: contain;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .user-name{
+    margin-inline-start: 1.25rem;
+    .name {
+      font-size: .875rem;
+      line-height: 1.25rem;
+      font-weight: 700;
+      color: #404040;
+    }
+    .role {
+      font-size: .75rem;
+      line-height: 1rem;
+      font-weight: 600;
+      color: #565656;
+    }
+  }
+}

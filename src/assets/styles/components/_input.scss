@@ -1,15 +1,15 @@
 // .auth-layout {
 
 .p-inputtext {
-  background: #FAFAFA;
-  border: 1px solid #DDDFDF;
+  background: $gray-color-5;
+  border: 1px solid $gray-color-10;
   border-radius: 1rem;
   width: 100%;
   height: 3.125rem;
   padding-inline: 1.5rem;
 }
 .p-inputtext.ng-dirty.ng-invalid {
-  border-color: #E52031;
+  border-color: $danger-color;
 }
 .p-password{
   width: 100%;
@@ -20,13 +20,16 @@
   font-size: .875rem;
   line-height: 1;
 }
-.p-checkbox-box	 {
-  border-color: #2387BF;
-  width: 1.125rem;
-  height: 1.125rem;
+.auth-layout{
+
+  .p-checkbox-box	 {
+    border-color: $primary-color;
+    width: 1.125rem;
+    height: 1.125rem;
+  }
 }
 .p-checkbox-box.p-highlight	 {
-  background-color: #2387BF;
+  background-color: $primary-color;
 }
 
 p-inputotp .p-inputtext {
@@ -42,9 +45,6 @@ p-inputotp .p-inputtext {
 right: 1.5rem;
 }
 // }
-.p-inputswitch-checked .p-inputswitch-slider {
-  background-color: #31B78F;
-}
 }
 .p-inputswitch-slider {
   background-color: #9C9C9C;
@@ -52,4 +52,18 @@ right: 1.5rem;
 p-dropdown .p-inputtext{
   border: 0;
   height: unset;
+}
+.p-checkbox-box.p-focus {
+  box-shadow: unset;
+}
+.p-inputtext:enabled:focus {
+  box-shadow: unset;
+}
+.p-checkbox-box.p-highlight{
+  border-color: $primary-color;
+}
+.popup{
+  .p-inputswitch-checked .p-inputswitch-slider {
+    background-color: #31B78F;
+  }
 }

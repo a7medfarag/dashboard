@@ -34,36 +34,58 @@
         <i class="pi pi-clock"></i>Pending</a></li>
     <li [ngClass]="{'isActiveLi': isActive('/dublicated')}"><a class="d-flex gap-3 cursor-pointer text-decoration-none"
         routerLink="/dublicated" routerLinkActive="active">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M16.3858 5.99854H17.4472C18.3076 5.99854 19.0039 6.69483 19.0039 7.55518V17.4483C19.0039 18.3077 18.3076 19.004 17.4472 19.004H6.5547C5.69434 19.004 4.99805 18.3077 4.99805 17.4473V16.0027"
-            [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')" stroke-linecap="round"
-            stroke-linejoin="round" />
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M1.99809 16.0027H13.3148C13.9841 16.0027 14.6083 15.6685 14.9795 15.1113L15.7138 14.0088C16.152 13.3516 16.3861 12.5792 16.3861 11.7889V3.99766C16.3861 2.8922 15.4907 1.99683 14.3853 1.99683H4.38109C3.27562 1.99683 2.38025 2.8922 2.38025 3.99766V11.0566C2.38025 11.6779 2.23519 12.2901 1.95808 12.8463L1.10372 14.5551C0.770581 15.2203 1.25478 16.0027 1.99809 16.0027Z"
-            [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')" stroke-linecap="round"
+            d="M15 21H4C3.448 21 3 20.552 3 20V9C3 8.448 3.448 8 4 8H15C15.552 8 16 8.448 16 9V20C16 20.552 15.552 21 15 21Z"
+            [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round" />
-          <path d="M11.6518 7.59204L8.83763 10.4062L7.14893 8.71851"
-            [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')" stroke-linecap="round"
+          <path d="M21 5V4C21 3.448 20.552 3 20 3H19" [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M21 15V16C21 16.552 20.552 17 20 17H19"
+            [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round" />
-          <path d="M6.37863 0.996338V2.99717" [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')"
+          <path d="M7 5V4C7 3.448 7.448 3 8 3H9" [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M13 3H15" [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M12.3816 0.996338V2.99717" [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')"
+          <path d="M21 11V9" [attr.stroke]="changeStrokeColorIfActiveRouter('/dublicated')" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round" />
-        </svg>Dublicated</a></li>
+        </svg>
+        Dublicated</a></li>
     <li [ngClass]="{'isActiveLi': isActive('/deleted')}" class="sidebar-border"><a
-        class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/deleted" routerLinkActive="active"><i
-          class="pi pi-trash"></i>Deleted</a></li>
+        class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/deleted" routerLinkActive="active"><svg
+          width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6.53003H19" [attr.stroke]="changeStrokeColorIfActiveRouter('/deleted')" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 10.47V16.53" [attr.stroke]="changeStrokeColorIfActiveRouter('/deleted')" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12 9.31V17.58" [attr.stroke]="changeStrokeColorIfActiveRouter('/deleted')" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M15 10.47V16.53" [attr.stroke]="changeStrokeColorIfActiveRouter('/deleted')" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M15.795 20.472H8.205C6.987 20.472 6 19.485 6 18.267V6.52802H18V18.267C18 19.485 17.013 20.472 15.795 20.472Z"
+            [attr.stroke]="changeStrokeColorIfActiveRouter('/deleted')" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M16 6.52802L15.262 4.22302C15.129 3.80902 14.744 3.52802 14.31 3.52802H9.69C9.255 3.52802 8.87 3.80902 8.738 4.22302L8 6.52802"
+            [attr.stroke]="changeStrokeColorIfActiveRouter('/deleted')" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M5 6.53003H6" [attr.stroke]="changeStrokeColorIfActiveRouter('/deleted')" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Deleted</a></li>
     <li [ngClass]="{'isActiveLi': isActive('/manage-Users')}">
       <p class="admin my-3 px-5">
         Administration
       </p>
       <a class="d-flex gap-3 cursor-pointer text-decoration-none" routerLink="/manage-Users" routerLinkActive="active">
-        <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="22" height="25" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M2.57812 1.76562C3.38021 0.963542 4.35417 0.5625 5.5 0.5625C6.64583 0.5625 7.61979 0.963542 8.42188 1.76562C9.22396 2.56771 9.625 3.54167 9.625 4.6875C9.625 6.09115 9.05208 7.20833 7.90625 8.03906C8.96615 8.55469 9.76823 9.29948 10.3125 10.2734C10.8568 9.29948 11.6589 8.55469 12.7188 8.03906C11.5729 7.20833 11 6.09115 11 4.6875C11 3.54167 11.401 2.56771 12.2031 1.76562C13.0052 0.963542 13.9792 0.5625 15.125 0.5625C16.2708 0.5625 17.2448 0.963542 18.0469 1.76562C18.849 2.56771 19.25 3.54167 19.25 4.6875C19.25 6.09115 18.6771 7.20833 17.5312 8.03906C18.4766 8.4974 19.2214 9.17057 19.7656 10.0586C20.3385 10.918 20.625 11.8776 20.625 12.9375H19.25C19.25 11.7917 18.849 10.8177 18.0469 10.0156C17.2448 9.21354 16.2708 8.8125 15.125 8.8125C13.9792 8.8125 13.0052 9.21354 12.2031 10.0156C11.401 10.8177 11 11.7917 11 12.9375H9.625C9.625 11.7917 9.22396 10.8177 8.42188 10.0156C7.61979 9.21354 6.64583 8.8125 5.5 8.8125C4.35417 8.8125 3.38021 9.21354 2.57812 10.0156C1.77604 10.8177 1.375 11.7917 1.375 12.9375H0C0 11.8776 0.272135 10.918 0.816406 10.0586C1.38932 9.17057 2.14844 8.4974 3.09375 8.03906C1.94792 7.20833 1.375 6.09115 1.375 4.6875C1.375 3.54167 1.77604 2.56771 2.57812 1.76562ZM7.43359 2.75391C6.91797 2.20964 6.27344 1.9375 5.5 1.9375C4.72656 1.9375 4.06771 2.20964 3.52344 2.75391C3.00781 3.26953 2.75 3.91406 2.75 4.6875C2.75 5.46094 3.00781 6.11979 3.52344 6.66406C4.06771 7.17969 4.72656 7.4375 5.5 7.4375C6.27344 7.4375 6.91797 7.17969 7.43359 6.66406C7.97786 6.11979 8.25 5.46094 8.25 4.6875C8.25 3.91406 7.97786 3.26953 7.43359 2.75391ZM17.0586 2.75391C16.543 2.20964 15.8984 1.9375 15.125 1.9375C14.3516 1.9375 13.6927 2.20964 13.1484 2.75391C12.6328 3.26953 12.375 3.91406 12.375 4.6875C12.375 5.46094 12.6328 6.11979 13.1484 6.66406C13.6927 7.17969 14.3516 7.4375 15.125 7.4375C15.8984 7.4375 16.543 7.17969 17.0586 6.66406C17.6029 6.11979 17.875 5.46094 17.875 4.6875C17.875 3.91406 17.6029 3.26953 17.0586 2.75391Z"
             [attr.fill]="changeStrokeColorIfActiveRouter('/manage-Users')" />
         </svg>
+
         Manage Users</a>
     </li>
     <li [ngClass]="{'isActiveLi': isActive('/manage-roles')}">

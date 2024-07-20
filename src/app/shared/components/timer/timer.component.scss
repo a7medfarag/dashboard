@@ -1,7 +1,8 @@
+$gray-color-70: $gray-color-70;
 .timer-action {
   margin-top: 2rem;
   margin-inline: auto;
-  color: #262626;
+  color: $gray-color-70;
   .resendBtn{
     font-size: .875rem;
     line-height: 1.5rem;
@@ -14,6 +15,6 @@
   font-size: .75rem;
   line-height: 1rem;
   font-weight: 600;
-  color: #262626;
+  color: $gray-color-70;
   margin-top: .25rem;
 }
